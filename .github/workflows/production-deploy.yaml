@@ -10,7 +10,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: [self-hosted, rainbow-production]
+    runs-on: [self-hosted, nishat-production]
     name: Deploy Latest Image on Docker
     steps:
       - name: Run SH Command
