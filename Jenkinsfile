@@ -20,11 +20,11 @@ pipeline {
                 {
                     
                     if (params.DEP_BRANCH == 'main') {
-                        env.IMAGE_NAME = "wimetrixcregistery/utopia-Nishat-frontend-pack-station"
+                        env.IMAGE_NAME = "wimetrixcregistery/Nishat-frontend-pack-station"
                     } 
                     
                     else if (params.DEP_BRANCH == 'qa') {
-                        env.IMAGE_NAME = "wimetrixcregistery/utopia-Nishat-frontend-pack-stationqa"
+                        env.IMAGE_NAME = "wimetrixcregistery/Nishat-frontend-pack-stationqa"
                     } 
                     
                     else {
@@ -84,7 +84,7 @@ pipeline {
             def dockerfileDir = '/home/jenkins/deployment-package/wimetrix/Nishat-frontend-pack-station/'
             def sourceDir = "${dockerfileDir}source"
             withCredentials([
-                        file(credentialsId: 'RAINBOW_FRONTEND_PRODUCTION', variable: 'SECRET_FILE')
+                        file(credentialsId: 'NISHAT_FRONTEND_PRODUCTION', variable: 'SECRET_FILE')
                     ]){
 
                     sh label: '', script: '''
