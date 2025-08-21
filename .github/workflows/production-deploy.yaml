@@ -1,4 +1,4 @@
-name: Nishat-rainbow-frontend-Production Deploy Image
+name: Nishat-frontend-Pack-Station-Production Deploy Image
 
 on:
   workflow_dispatch:
